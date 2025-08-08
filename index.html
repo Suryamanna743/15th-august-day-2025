@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAPPY INDEPENDENCE DAY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>HAPPY INDEPENDENCE DAY</h1>
+    <nav>
+      <a href="#details">Event Details</a>
+     <nav>
+  <a href="sauterohit@gmail.com.com">Contact</a>
+</nav>
+
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <h2>HAPPY INDEPENDENCE DAY</h2>
+      <p class="subtitle">ALL INDIAN🎀</p>
+      <blockquote>
+        "Freedom is not worth having if it does not include the freedom to make mistakes."
+      </blockquote>
+
+      <div class="countdown" id="countdown">
+        <div><span id="days">0</span><p>Days</p></div>
+        <div><span id="hours">0</span><p>Hours</p></div>
+        <div><span id="minutes">0</span><p>Minutes</p></div>
+        <div><span id="seconds">0</span><p>Seconds</p></div>
+      </div>
+
+      <p class="event-date">August 15th, 2025</p>
+      <p class="venue"></p>
+
+      <button class="btn">Join the Celebration</button>
+      <a href="https://t.me/pdf_maker_update" target="_blank" class="btn-secondary">Join our Telegram Channel</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed by SURYA🌸</p>
+  </footer>
+
+  <button onclick="downloadCountdown()">Download Countdown</button>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script>
+  function downloadCountdown() {
+    const countdownElement = document.querySelector(".countdown-container"); // Update this selector to match your timer box
+
+    html2canvas(countdownElement).then(canvas => {
+      const link = document.createElement("a");
+      link.download = "independence_day_countdown.png";
+      link.href = canvas.toDataURL();
+      link.click();
+    });
+  }
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<section id="event-details" class="event-details-section">
+  <h2>About Independence Day</h2>
+  <p>
+    Independence Day in India is celebrated on August 15th every year. It marks the day in 1947 when India gained independence from British rule.
+  </p>
+  <p>
+    The day is celebrated with flag hoisting ceremonies, cultural events, patriotic songs, and parades across the country. It’s a moment to honor the sacrifices of our freedom fighters and celebrate the spirit of a free nation.
+  </p>
+  <p>
+    Join us on this special day as we come together to remember our history and celebrate our progress!
+  </p>
+</section>
+
+<div class="review-section">
+  <h2>Rate Our Celebration</h2>
+  <p>Tell us what you think about this event!</p>
+  
+  <div class="stars">
+    ★ ★ ★ ★ ★
+  </div>
+
+  <button onclick="alert('Thank you for your feedback!')">Leave a Review</button>
+</div>
+
+<a href="countdown.html" download>Download Countdown Page</a>
